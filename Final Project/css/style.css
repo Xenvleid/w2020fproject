@@ -1,0 +1,41 @@
+body {
+    background: url('../images/bg.jpg') repeat-y; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    animation: flying 20s linear infinite;
+    cursor: url(../images/startup.png), auto; 
+  } 
+
+  @font-face {
+    font-family: RedSeven;
+    src: url(../css/RedSeven.otf);
+  }
+
+#scoreboard {
+background: url('../images/sb1.png') no-repeat;
+background-size: 220px 120px;
+height: 60px;
+width: 57px;
+position: static;
+color: red;
+padding: 12px;
+padding-top: 51px;
+padding-left: 152px;
+font-family: 'RedSeven', cursive;
+top: 200px; 
+left: 50px;
+font-size: 16px; 
+border-radius: 25px;
+}
+          
+
+@keyframes flying {
+    from {
+      background-position: 0 -3840px;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
